@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Justice</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize_min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+    
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map("map_yandex", {
+      center: [57.93213254, 55.31546999],
+      zoom: 15,
+      controls: []
+    });
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'images/marker.png',
+            iconImageSize: [56, 86],
+            iconImageOffset: [-10, -80]
+        }),
+        myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemarkWithContent);
+    });
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main_wrapper">
+  <header class="header_main">
+    <p class="persefona_position"><img src="images/persefona_short.png" alt="#"></p>
+    <div class="telephone">
+      <a href="tel:+74955556544">8(495)555-65-44</a>
+      <p class="main_style">ОБРАТНЫЙ<br/>ЗВОНОК</p>
+    </div>
+
+    <nav>
+      <div class="navigation">
+        <ul>
+          <li><a href="#about_us">О НАС</a></li>
+          <li class="active"><a href="#services">УСЛУГИ</a></li>
+          <li class="logo"></li>
+          <li><a href="#calls">ОТЗЫВЫ</a></li>
+          <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="about">
+      <h1 id="about_us">ЮРИДИЧЕСКИЕ <br> УСЛУГИ</h1>
+      <div class="about_content">
+        <div class="add_border">
+          <p>Юридическая фирма «Bargain» объединят высококвалифицированных юристов<br> и адвокатов, без преувеличения, во все
+            отраслях права.
+          </p>
+
+          <p>Наши специалисты внимательно следят за изменениями в российском законодательстве и всегда готовы помочь Вам в решении
+            самых сложных задач.
+          </p>
+        </div>
+        <p class="free_consultation"><a href="#">ПРОКОНСУЛЬТИРОВАТЬСЯ БЕСПЛАТНО</a></p>
+      </div>
+    </div>
+    <div class="vertical_line1"></div>
+    <div class="vertical_line2">
+      <div class="hide_line"></div>
+    </div>
+    <div class="vertical_line3"></div>
+    <div class="line_decoration_bottom"></div>
+    <div class="line_decoration_bottom2"></div>
+  </header>
+
+  <section class="about_services">
+    <div class="about_services_content">
+      <h1 id="services">МЫ РАБОТАЕМ <br><span>по следующим направлениям</span></h1>
+      <div class="registration">
+        <h2><a href="#">ЗАПИСАТЬСЯ</a></h2>
+        <p>Запишитесь на консультацию <br> со специалистом</p>
+      </div>
+      <h3>ГРАЖДАНСКИЕ ДЕЛА</h3>
+      <ul>
+        <li class="decoration">семейные</li>
+        <li class="decoration">жилищные</li>
+        <li class="decoration">земельные</li>
+        <li class="decoration">трудовые</li>
+        <li class="decoration">страховые</li>
+        <li class="decoration">наследственные</li>
+        <li class="decoration">авторские</li>
+        <li class="decoration_none">УГОЛОВНЫЕ ДЕЛА</li>
+        <li class="decoration_none">АРБИТРАЖНЫЕ СПОРЫ</li>
+        <li class="decoration_none">АДМИНИСТРАТИВНЫЕ ДЕЛА</li>
+        <li class="decoration_none">ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ ОРГАНИЗАЦИЙ </li>
+        <li class="decoration_none">НАЛОГОВЫЕ СПОРЫ</li>
+        <li class="decoration_none">ИСПОЛНИТЕЛЬНОЕ ПРОИЗВОДСТВО</li>
+        <li class="decoration_none">ПРОФЕССИОНАЛЬНЫЙ ДЕРЖАТЕЛЬ РЕЕСТРА АКЦИОНЕРОВ</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="our_advantages">
+    <h2>НАШИ<br> ПРЕИМУЩЕСТВА</h2>
+    <div class="our_advantages_wrapper">
+
+      <div class="proficiency">
+        <img src="images/proficiency.png" alt="#">
+        <div class="block_wrapper first">
+          <h3 class="ch_font">ПРОФЕССИОНАЛИЗМ</h3>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </P>
+        </div>
+      </div>
+
+      <div class="reliability">
+        <img src="images/reliability.png" alt="#">
+        <div class="block_wrapper">
+          <h3>НАДЕЖНОСТЬ</h3>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </P>
+        </div>
+      </div>
+
+      <div class="period">
+        <img src="images/timer.png" alt="#">
+        <div class="block_wrapper">
+          <h3>СРОКИ</h3>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </P>
+        </div>
+      </div>
+
+      <div class="best_prise">
+        <img src="images/piggy.png" alt="#">
+        <div class="block_wrapper">
+          <h3>ВЫГОДНАЯ ЦЕНА</h3>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </P>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2 id="calls">ОТЗЫВЫ</h2>
+    <div class="reviews_wrapper">
+      <div class="review1">
+          <img src="images/woman.png" alt="">
+        <p class="top">Иванова Мария, 27 лет<br>директор рекламного агентства</p><p> “Lorem ipsum dolor sit amet, consectetur adipisici<br>ng
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliqua.”<br>03/02/15 </p>
+      </div>
+      <div class="review2">
+          <img src="images/woman_2.png" alt="">
+        <p class="top2">Иванова Мария, 27 лет<br>директор рекламного агентства</p> <p> “Lorem ipsum dolor sit amet, consectetur adipisici<br>ng
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliqua.”</p><p class="date"> 03/02/15 </p>
+      </div>
+      <div class="review3">
+          <img src="images/woman.png" alt="">
+        <p class="top">Иванова Мария, 27 лет<br>директор рекламного агентства</p><p> “Lorem ipsum dolor sit amet, consectetur adipisici<br>ng
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliqua.”<br>03/02/15 </p>
+      </div>
+      <div class="else"><a href="#">ещё...</a></div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h2 id="contacts">КОНТАКТЫ</h2>
+    <div class="decoration_line"></div>
+    <div id="map_yandex" style="width:1274px;height: 514px"></div>
+    <form action="index.php" method="post" >
+      <h3>ЗАПИСЬ<br> НА КОНСУЛЬТАЦИЮ</h3>
+      <input type="text" name="fio" placeholder="Имя" required>
+      <input type="text" name="email" placeholder="Укажите e-mail" required>
+      <input type="submit" value="ОТПРАВИТЬ">
+    </form>
+    <div class="number_address">
+      <p><a href="tel:+74956755566">8 (495) 675-55-66</a><br><a href="mailto:mail@bargain.com">mail@bargain.com</a></p>
+      <p>г.Москва,<br>ул. Покрышкина, д.23</p>
+    </div>
+  </section>
+
+  <footer class="main_footer">
+    <div class="logo_footer">
+      <img src="images/logo_footer.png" alt="#">
+      <p>ЮРИДИЧЕСКИЕ <br> УСЛУГИ</p>
+    </div>
+    <div class ="main_footer_wrapper">    
+        <div class="telephone telephone_change">
+          <a href="tel:+74955556544">8(495)555-65-44</a>
+          <p class="main_style">ОБРАТНЫЙ<br/>ЗВОНОК</p>
+        </div>
+    
+        <div class="footer_mail">
+            <p class="reload_style"><a href="mailto:mail1@bargain.com">mail1@bargain.com</a></p>
+            <p class="reload_style"> <a href="mailto:mail2@bargain.com">mail2@bargain.com</a></p>
+        </div>
+    </div>
+      
+  </footer>
+</div>
+</body>
+</html>
